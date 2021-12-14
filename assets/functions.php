@@ -8,13 +8,13 @@ function clean_data($data) {
 
 function isLoggedInAsUser($session) {
     return array_key_exists("loggedin", $session) && true === $session["loggedin"];
-  }
+}
   
-  function isLoggedInAsAdmin($session) {
-    return array_key_exists("Adminloggedin", $session) && true === $session["Adminloggedin"];
-  }
+function isLoggedInAsAdmin($session) {
+  return array_key_exists("Adminloggedin", $session) && true === $session["Adminloggedin"];
+}
   
-  function isLoggedIn($session) {
-    return isLoggedInAsUser($session) || isLoggedInAsAdmin($session);
-  }
+function isLoggedIn($session) {
+  return isLoggedInAsUser($session) || isLoggedInAsAdmin($session);
+}
   
